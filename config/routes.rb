@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  # changed get 'pages/home' to 
+  root 'pages#home'
+  
+  # get 'pages/about' - this would carry me to http://localhost:3000/pages/about
+  get 'about' => 'pages#about'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
